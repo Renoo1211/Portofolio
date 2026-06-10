@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Reno — Data Analyst Portfolio. Mahasiswa Sistem Informasi yang membangun keahlian di Data Analytics, Business Intelligence, dan Workflow Automation." />
+  <title>Reno | Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="icon" type="image/png" href="img/icon.png">
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════
+       INTRO SPLASH
+  ════════════════════════════════════════ -->
+  <div id="intro" role="dialog" aria-label="Intro animation">
+    <span id="intro-word" class="intro-word"></span>
+    <span id="intro-lang"  class="intro-lang"></span>
+    <div class="intro-bar-wrap">
+      <div id="intro-bar" class="intro-bar"></div>
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════
+       BACKGROUND GRID
+  ════════════════════════════════════════ -->
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+
+
+  <!-- ════════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════════ -->
+  <nav>
+    <a class="nav-logo" href="#hero">reno | <span data-en="portfolio" data-id="portofolio">portofolio</span></a>
+
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#tools">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <a class="nav-cta" href="#contact" data-en="Let's talk →" data-id="Hubungi →">Let's talk →</a>
+
+    <!-- Language Toggle (desktop) -->
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+      <span class="lang-option" id="langEN">EN</span>
+      <span class="lang-sep">|</span>
+      <span class="lang-option" id="langID">ID</span>
+    </button>
+  </nav>
+
+  <!-- Language Toggle Mobile (floating kanan atas, tampil di ≤768px) -->
+  <div class="lang-toggle-mobile-wrap">
+    <button class="lang-toggle" id="langToggleMobile" aria-label="Switch language">
+      <span class="lang-option" id="langENMobile">EN</span>
+      <span class="lang-sep">|</span>
+      <span class="lang-option" id="langIDMobile">ID</span>
+    </button>
+  </div>
+
+
+  <!-- ════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-badge fade-up">
+          <span class="badge-dot" aria-hidden="true"></span>
+          <span data-en="Available for collaboration" data-id="Terbuka untuk kolaborasi">Available for collaboration</span>
+        </div>
+
+        <h1 class="fade-up delay-1">
+          <span data-en="Turning raw data" data-id="Mengolah data mentah">Turning raw data</span><br><em data-en="into clear insight" data-id="menjadi insight nyata">into <em>clear insight</em></em>
+        </h1>
+
+        <p class="hero-desc fade-up delay-2" 
+           data-en="Hi, I'm <strong>Reno</strong> — an Information Systems student &amp; administrator building expertise in <strong>Data Analytics</strong>, <strong>Business Intelligence</strong>, and <strong>Workflow Automation</strong>."
+           data-id="Halo, saya <strong>Reno</strong> — mahasiswa Sistem Informasi &amp; staff administrator yang membangun keahlian di bidang <strong>Data Analytics</strong>, <strong>Business Intelligence</strong>, dan <strong>Workflow Automation</strong>.">
+          Halo, saya <strong>Reno</strong> — mahasiswa Sistem Informasi &amp; staff
+          administrator yang membangun keahlian di bidang
+          <strong>Data Analytics</strong>, <strong>Business Intelligence</strong>,
+          dan <strong>Workflow Automation</strong>.
+        </p>
+        <div class="hero-socials fade-up delay-3">
+
+      <a href="https://www.linkedin.com/in/renosi/"target="_blank"rel="noopener noreferrer"title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a href="https://www.instagram.com/screzonss"target="_blank"rel="noopener noreferrer"title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a href="https://github.com/Renoo1211"target="_blank"rel="noopener noreferrer"title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+
+      <a href="Assets/Reno CV.pdf"download title="Download CV">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+    </div>
+
+        <div class="hero-actions fade-up delay-3">
+          <a href="#projects" class="btn-primary" data-en="View Projects" data-id="Lihat Proyek">View Projects</a>
+          <a href="#contact"  class="btn-ghost" data-en="Contact Me" data-id="Hubungi Saya">Hubungi Saya</a>
+        </div>
+
+        <div class="hero-stats fade-up delay-4">
+          <div class="hero-stat">
+            <div class="hero-stat-num">7<span>+</span></div>
+            <div class="hero-stat-label" data-en="TOOLS LEARNED" data-id="TOOLS DIPELAJARI">TOOLS DIPELAJARI</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">600<span>+</span></div>
+            <div class="hero-stat-label" data-en="STORES SUPPORTED" data-id="TOKO TERPANTAU">TOKO TERPANTAU</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">∞</div>
+            <div class="hero-stat-label" data-en="EAGER TO LEARN" data-id="SEMANGAT BELAJAR">SEMANGAT BELAJAR</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ID Card Profile -->
+      <div class="hero-right fade-up delay-2">
+        <div class="id-card">
+          <div class="id-card-lanyard">
+            <div class="lanyard-strap"></div>
+            <div class="lanyard-clip"></div>
+          </div>
+          <div class="id-card-body">
+            <div class="id-card-header">
+              <div class="id-card-org" data-en="STAFF ADMINISTRATOR" data-id="STAFF ADMINISTRASI">STAFF ADMINISTRASI</div>
+              <div class="id-card-logo">reno</div>
+            </div>
+            <div class="id-card-photo-wrap">
+              <div class="id-card-photo">
+                <img src="img/foto.png" alt="">
+              </div>
+            </div>
+            <div class="id-card-info">
+              <div class="id-card-name">Reno</div>
+              <div class="id-card-title">Indomaret Group</div>
+              <div class="id-card-divider"></div>
+              <div class="id-card-details">
+                <div class="id-detail"><span class="id-detail-label" data-en="STATUS" data-id="STATUS">STATUS</span><span class="id-status-dot"></span><span class="id-detail-val" data-en="Available" data-id="Tersedia">Available</span></div>
+                <div class="id-detail"><span class="id-detail-label" data-en="LOCATION" data-id="LOKASI">LOKASI</span><span class="id-detail-val">Tangerang, Indonesia</span></div>
+                <div class="id-detail"><span class="id-detail-label">ROLE</span><span class="id-detail-val" data-en="Staff Administrator
+                  " data-id="Staff Administrasi">Staff Administrasi</span></div>
+              </div>
+              <div class="id-card-barcode">
+                <div class="barcode-lines">
+                  <span></span><span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="barcode-text">RENO-DA-2026</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+<!-- ════════════════════════════════════════
+       ABOUT
+  ════════════════════════════════════════ -->
+  <section id="about">
+    <div class="about-hero-wrap">
+
+      <!-- Foto Kiri -->
+      <div class="about-photo-col fade-up">
+        <div class="about-photo-frame">
+          <img src="img/profilaboutme.png" alt="Reno" class="about-photo-img" />
+        </div>
+      </div>
+
+      <!-- Teks Kanan -->
+      <div class="about-content-col fade-up delay-1">
+
+       <div class="about-title-wrap">
+
+  <div class="about-iam-row">
+    <span class="about-iam"
+          data-en="I AM"
+          data-id="SAYA">
+      I AM
+    </span>
+
+    <span class="about-name-badge">
+      RENO
+    </span>
+  </div>
+
+  <div class="about-role-row">
+    <span class="about-role-badge"
+          data-en="Data Enthusiast"
+          data-id="Antusias Data">
+      Data Enthusiast
+    </span>
+  </div>
+
+</div>
+
+        <div class="about-divider-line"></div>
+
+        <div class="about-body-text">
+          <p data-en="As an <strong>Information Systems student</strong> and <strong>Staff Administrator</strong>, I specialize in translating complex business data into clear, actionable insights."
+             data-id="Sebagai <strong>mahasiswa Sistem Informasi</strong> dan <strong>Staff Administrator</strong>, saya mengkhususkan diri dalam menerjemahkan data bisnis yang kompleks menjadi insight yang jelas dan dapat ditindaklanjuti.">
+            As an <strong>Information Systems student</strong> and <strong>Staff Administrator</strong>, I specialize in translating complex business data into clear, actionable insights.
+          </p>
+          <p data-en="From automating slow reports to building BI dashboards, I thrive on making data work smarter — using <strong>Excel, SQL, Python, and KNIME</strong> to drive real decisions."
+             data-id="Dari mengotomasi laporan yang lambat hingga membangun dashboard BI, saya unggul dalam membuat data bekerja lebih cerdas — menggunakan <strong>Excel, SQL, Python, dan KNIME</strong> untuk mendorong keputusan nyata.">
+            From automating slow reports to building BI dashboards, I thrive on making data work smarter — using <strong>Excel, SQL, Python, and KNIME</strong> to drive real decisions.
+          </p>
+        </div>
+
+        <a href="Assets/Reno CV.pdf" download class="about-cv-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span data-en="DOWNLOAD CV" data-id="UNDUH CV">DOWNLOAD CV</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ════════════════════════════════════════
+       TOOLS MARQUEE (Moving logos)
+  ════════════════════════════════════════ -->
+  <section id="tools">
+    <div class="section-wrap">
+      <h2 class="section-title fade-up delay-1"><span data-en="Technical" data-id="Keahlian">Keahlian</span> <em data-en="Skills" data-id="Teknis">Teknis</em>.</h2>
+      <p class="section-sub fade-up delay-2" data-en="The stack I use for data analytics, visualization, and business process automation." data-id="Stack yang saya gunakan untuk analitik data, visualisasi, dan otomasi proses bisnis.">
+        Stack yang saya gunakan untuk analitik data, visualisasi, dan otomasi proses bisnis.
+      </p>
+    </div>
+
+    <!-- Row 1: moves LEFT -->
+    <div class="marquee-wrapper fade-up delay-3">
+      <div class="marquee-track track-left">
+        <div class="marquee-set">
+          <div class="tool-logo-card">
+            <img src="img/excel.png" alt="Excel" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="tool-fallback" style="display:none">📊</div>
+            <span>Microsoft Excel</span>
+          </div>
+          <div class="tool-logo-card">
+            <img src="img/office.png" alt="Word" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="tool-fallback" style="display:none">📝</div>
+            <span>Microsoft Word</span>
+          </div>
+          <div class="tool-logo-card">
+            <img src="img/point.png" alt="PowerPoint" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="tool-fallback" style="display:none">📊</div>
+            <span>PowerPoint</span>
+          </div>
+          <div class="tool-logo-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Google_Sheets_2020_Logo.svg" alt="Google Sheets" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="tool-fallback" style="display:none">🟩</div>
+            <span>Google Sheets</span>
+          </div>
+          <div class="tool-logo-card">
+            <img src="img/knime.jpeg  " alt="Knime" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <span>KNIME</span>
+          </div>
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="marquee-set">
+          <div class="tool-logo-card">
+            <img src="img/excel.png" alt="Excel" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="tool-fallback" style="display:none">📊</div>
+            <span>Microsoft Excel</span>
+          </div>
+          <div class="tool-logo-card">
+            <img src="img/office.png" alt="Word" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="tool-fallback" style="display:none">📝</div>
+            <span>Microsoft Word</span>
+          </div>
+          <div class="tool-logo-card">
+            <img src="img/point.png" alt="PowerPoint" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="tool-fallback" style="display:none">📊</div>
+            <span>PowerPoint</span>
+          </div>
+          <div class="tool-logo-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Google_Sheets_2020_Logo.svg" alt="Google Sheets" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="tool-fallback" style="display:none">🟩</div>
+            <span>Google Sheets</span>
+          </div>
+          <div class="tool-logo-card">
+            <img src="img/knime.jpeg  " alt="Knime" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <span>KNIME</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2: moves RIGHT -->
+    <div class="marquee-wrapper fade-up delay-4" style="margin-top:1rem;">
+      <div class="marquee-track track-right">
+        <div class="marquee-set">
+          <div class="tool-logo-card">
+            <img src="img/sql.jpg  " alt="sql" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <span>SQL</span>
+          </div>
+          <div class="tool-logo-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="tool-fallback" style="display:none">🐍</div>
+            <span>Python</span>
+          </div>
+          <div class="tool-logo-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="tool-fallback" style="display:none">📊</div>
+            <span>Power BI</span>
+          </div>
+          <div class="tool-logo-card">
+            <img src="img/tableau.jpg  " alt="tableu" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="tool-fallback" style="display:none">📈</div>
+            <span>Tableau</span>
+          </div>
+          <div class="tool-logo-card">
+            <img src="img/excel.png" alt="Excel" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="tool-fallback" style="display:none">📊</div>
+            <span>Microsoft Excel</span>
+          </div>
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="marquee-set">
+          <div class="tool-logo-card">
+            <img src="img/sql.jpg  " alt="sql" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <span>SQL</span>
+          </div>
+          <div class="tool-logo-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="tool-fallback" style="display:none">🐍</div>
+            <span>Python</span>
+          </div>
+          <div class="tool-logo-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="tool-fallback" style="display:none">📊</div>
+            <span>Power BI</span>
+          </div>
+          <div class="tool-logo-card">
+            <img src="img/tableau.jpg  " alt="tableu" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="tool-fallback" style="display:none">📈</div>
+            <span>Tableau</span>
+          </div>
+          <div class="tool-logo-card">
+            <img src="img/excel.png" alt="Excel" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="tool-fallback" style="display:none">📊</div>
+            <span>Microsoft Excel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+
+  <!-- ════════════════════════════════════════
+       EXPERIENCE
+  ════════════════════════════════════════ -->
+  <section id="experience">
+    <div class="section-wrap">
+      <h2 class="section-title fade-up delay-1"><span data-en="Career" data-id="Perjalanan">Perjalanan</span> <em data-en="Journey" data-id="Karier">Karier</em>.</h2>
+      <p class="section-sub fade-up delay-2" data-en="Experiences and roles that have shaped me as a data analyst." data-id="Pengalaman dan peran yang membentuk saya sebagai seorang data analyst.">
+        Pengalaman dan peran yang membentuk saya sebagai seorang data analyst.
+      </p>
+
+      <div class="timeline fade-up delay-3">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role" data-en="Staff Administrator - Digital Payment Operations" data-id="Staff Administrasi - Operasional Pembayaran Digital">Staff Administrator</div>
+                <div class="timeline-company">PT. Indomarco Prismatama ( Indomaret Group )</div>
+              </div>
+              <div class="timeline-period" data-en="2022 — Present" data-id="2022 — Sekarang">2022 — Sekarang</div>
+            </div>
+            <p class="timeline-desc" data-en="Managed and automated daily administrative processes using Excel and Google Sheets. Built reporting dashboards that significantly cut reporting time and improved organizational data accuracy." data-id="Mengelola dan mengotomasi proses administrasi harian menggunakan Excel dan Google Sheets. Membangun dashboard laporan yang memangkas waktu pelaporan secara signifikan dan meningkatkan akurasi data organisasi.">
+              Mengelola dan mengotomasi proses administrasi harian menggunakan Excel dan Google Sheets.
+              Membangun dashboard laporan yang memangkas waktu pelaporan secara signifikan dan
+              meningkatkan akurasi data organisasi.
+            </p>
+            <div class="timeline-tags">
+              <span class="tl-tag">Excel</span>
+              <span class="tl-tag">Google Sheets</span>
+              <span class="tl-tag">Data Entry</span>
+              <span class="tl-tag">Reporting</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role" data-en="Information Systems Student" data-id="Mahasiswa Sistem Informasi">Mahasiswa Sistem Informasi</div>
+                <div class="timeline-company">Universitas Pamulang Serang</div>
+              </div>
+              <div class="timeline-period" data-en="2024 — Present" data-id="2024 — Sekarang">2024 — Sekarang</div>
+            </div>
+            <p class="timeline-desc" data-en="Studying information systems foundations, databases, and data analytics academically. Actively working on data pipeline projects, BI dashboards, and machine learning exploration as part of self-development." data-id="Mempelajari fondasi sistem informasi, basis data, dan analitik data secara akademis. Aktif mengerjakan proyek data pipeline, dashboard BI, dan eksplorasi machine learning sebagai bagian dari pengembangan diri.">
+              Mempelajari fondasi sistem informasi, basis data, dan analitik data secara akademis.
+              Aktif mengerjakan proyek data pipeline, dashboard BI, dan eksplorasi machine learning
+              sebagai bagian dari pengembangan diri.
+            </p>
+            <div class="timeline-tags">
+              <span class="tl-tag">Python</span>
+              <span class="tl-tag">SQL</span>
+              <span class="tl-tag">KNIME</span>
+              <span class="tl-tag">Power BI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role" data-en="Data Analyst (Self-Learning)" data-id="Data Analyst (Belajar Mandiri)">Data Analyst (Self-Learning)</div>
+                <div class="timeline-company">Independent</div>
+              </div>
+              <div class="timeline-period" data-en="2025 — Present" data-id="2025 — Sekarang">2025 — Sekarang</div>
+            </div>
+            <p class="timeline-desc" data-en="Independently exploring the data analytics ecosystem through courses, personal projects, and certifications. Focused on ETL pipelines, data visualization, and Business Intelligence to support data-driven decision making." data-id="Secara mandiri mendalami ekosistem data analytics melalui kursus, proyek pribadi, dan sertifikasi. Berfokus pada ETL pipeline, visualisasi data, dan Business Intelligence untuk mendukung pengambilan keputusan berbasis data.">
+              Secara mandiri mendalami ekosistem data analytics melalui kursus, proyek pribadi,
+              dan sertifikasi. Berfokus pada ETL pipeline, visualisasi data, dan Business Intelligence
+              untuk mendukung pengambilan keputusan berbasis data.
+            </p>
+            <div class="timeline-tags">
+              <span class="tl-tag">Tableau</span>
+              <span class="tl-tag">Power BI</span>
+              <span class="tl-tag">Pandas</span>
+              <span class="tl-tag">ETL</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+
+  <!-- ════════════════════════════════════════
+       PROJECTS
+  ════════════════════════════════════════ -->
+  <section id="projects">
+    <div class="section-wrap">
+      <h2 class="section-title fade-up delay-1"><span data-en="What I've" data-id="Yang sudah">Yang sudah</span><br><span data-en="" data-id="saya "></span><em data-en="built" data-id="bangun">saya <em>bangun</em></em></h2>
+      <p class="section-sub fade-up delay-2" data-en="Analytics and automation projects that reflect my journey in understanding and working with data." data-id="Proyek analitik dan otomasi yang mencerminkan perjalanan saya dalam memahami dan bekerja dengan data.">
+        Proyek analitik dan otomasi yang mencerminkan perjalanan saya dalam
+        memahami dan bekerja dengan data.
+      </p>
+
+      <div class="projects-grid fade-up delay-3">
+
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon" aria-hidden="true">📋</div>
+            <div class="project-tags">
+              <span class="project-tag tag-green">Excel</span>
+              <span class="project-tag tag-blue">Automation</span>
+            </div>
+          </div>
+          <h3 class="project-name">Automated Admin Report</h3>
+          <p class="project-desc" data-en="Automated dashboard for daily admin reports using Excel with Pivot Tables and macros — cutting reporting time from 2 hours to 15 minutes." data-id="Dashboard otomatis untuk laporan administrasi harian menggunakan Excel dengan Pivot Table dan macro — memangkas waktu pelaporan dari 2 jam menjadi 15 menit.">
+            Dashboard otomatis untuk laporan administrasi harian menggunakan
+            Excel dengan Pivot Table dan macro — memangkas waktu pelaporan
+            dari 2 jam menjadi 15 menit.
+          </p>
+          <div class="project-meta">
+            <div class="project-status">
+              <div class="status-dot"></div> Completed
+            </div>
+            <span>Excel · VBA</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon" aria-hidden="true">🔗</div>
+            <div class="project-tags">
+              <span class="project-tag tag-teal">Google Sheets</span>
+              <span class="project-tag tag-amber">BI</span>
+            </div>
+          </div>
+          <h3 class="project-name">Sales Tracker Dashboard</h3>
+          <p class="project-desc" data-en="Real-time sales dashboard in Google Sheets with trend visualization, dynamic filters, and KPI summaries — connected to Google Forms as automatic data input." data-id="Dashboard penjualan real-time di Google Sheets dengan visualisasi tren, filter dinamis, dan ringkasan KPI — terhubung ke Google Forms sebagai input data otomatis.">
+            Dashboard penjualan real-time di Google Sheets dengan visualisasi
+            tren, filter dinamis, dan ringkasan KPI — terhubung ke Google
+            Forms sebagai input data otomatis.
+          </p>
+          <div class="project-meta">
+            <div class="project-status">
+              <div class="status-dot"></div> Completed
+            </div>
+            <span>Sheets · Apps Script</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon" aria-hidden="true">⚙️</div>
+            <div class="project-tags">
+              <span class="project-tag tag-purple">KNIME</span>
+              <span class="project-tag tag-blue">ETL</span>
+            </div>
+          </div>
+          <h3 class="project-name">Data Cleaning Pipeline</h3>
+          <p class="project-desc" data-en="ETL pipeline with KNIME to clean and transform raw datasets from multiple sources before analysis — reducing missing values by up to 90%." data-id="Pipeline ETL dengan KNIME untuk membersihkan dan mentransformasi dataset mentah dari berbagai sumber sebelum dianalisis — mengurangi missing value hingga 90%.">
+            Pipeline ETL dengan KNIME untuk membersihkan dan mentransformasi
+            dataset mentah dari berbagai sumber sebelum dianalisis —
+            mengurangi missing value hingga 90%.
+          </p>
+          <div class="project-meta">
+            <div class="project-status">
+              <div class="status-dot"></div> Completed
+            </div>
+            <span>KNIME · ETL</span>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon" aria-hidden="true">🐍</div>
+            <div class="project-tags">
+              <span class="project-tag tag-green">Python</span>
+              <span class="project-tag tag-blue">SQL</span>
+            </div>
+          </div>
+          <h3 class="project-name">Student Data Analysis</h3>
+          <p class="project-desc" data-en="Academic data analysis using Python (Pandas, Matplotlib) and SQL — identifying performance patterns and factors affecting GPA." data-id="Analisis data akademik mahasiswa menggunakan Python (Pandas, Matplotlib) dan SQL — mengidentifikasi pola performa dan faktor yang mempengaruhi IPK.">
+            Analisis data akademik mahasiswa menggunakan Python (Pandas,
+            Matplotlib) dan SQL — mengidentifikasi pola performa dan faktor
+            yang mempengaruhi IPK.
+          </p>
+          <div class="project-meta">
+            <div class="project-status">
+              <div class="status-dot wip"></div> In Progress
+            </div>
+            <span>Python · SQL</span>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon" aria-hidden="true">📊</div>
+            <div class="project-tags">
+              <span class="project-tag tag-amber">BI</span>
+              <span class="project-tag tag-teal">Dashboard</span>
+            </div>
+          </div>
+          <h3 class="project-name">BI Prototype — Organisasi</h3>
+          <p class="project-desc" data-en="Business Intelligence prototype to map campus organization division performance — trend analysis, period comparisons, and actionable data-driven insights." data-id="Prototipe Business Intelligence untuk memetakan performa divisi organisasi kampus — trend analysis, perbandingan periode, dan insight actionable berbasis data.">
+            Prototipe Business Intelligence untuk memetakan performa divisi
+            organisasi kampus — trend analysis, perbandingan periode, dan
+            insight actionable berbasis data.
+          </p>
+          <div class="project-meta">
+            <div class="project-status">
+              <div class="status-dot wip"></div> In Progress
+            </div>
+            <span>Sheets · Python</span>
+          </div>
+        </article>
+
+        <!-- Add card -->
+        <div class="project-card add-card" role="button" tabindex="0" aria-label="More projects coming soon">
+          <div class="add-card-inner">
+            <div class="add-card-plus" aria-hidden="true">+</div>
+            <div data-en="More coming soon" data-id="Segera hadir">More coming soon</div>
+            <div class="add-card-sub" data-en="New projects in progress" data-id="Proyek baru sedang digarap">Proyek baru sedang digarap</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+
+  <!-- ════════════════════════════════════════
+       CERTIFICATES
+  ════════════════════════════════════════ -->
+  <section id="certificates"> 
+    <div class="section-wrap"> 
+      <h2 class="section-title fade-up delay-1"><span data-en="Certificates &amp;" data-id="Sertifikat &amp;">Sertifikat &amp;</span> <em>Mini Project</em>.</h2> 
+      <p class="section-sub fade-up delay-2" data-en="Certifications proving my technical competency and commitment to continuous learning." data-id="Sertifikasi yang membuktikan kompetensi teknis dan komitmen saya terhadap pembelajaran berkelanjutan."> Sertifikasi yang membuktikan kompetensi teknis dan komitmen saya terhadap pembelajaran berkelanjutan. </p>
+  
+  <div class="cert-grid fade-up delay-3">
+
+  <!-- Sertifikat 1 -->
+  <div class="cert-card">
+    <div class="cert-img-wrap">
+      <img src="img/reno1.jpg" alt="Introduction & Implementasi IPv6 Addressing">
+    </div>
+    <div class="cert-info">
+      <div class="cert-name">Introduction & Implementasi IPv6 Addressing</div>
+      <div class="cert-issuer">ID-Network</div>
+      <div class="cert-date">2025</div>
+    </div>
+  </div>
+
+  <!-- Sertifikat 2 -->
+  <div class="cert-card">
+    <div class="cert-img-wrap">
+      <img src="img/reno2.jpg" alt="How to Determine Email Phising">
+    </div>
+    <div class="cert-info">
+      <div class="cert-name">How to Determine Email Phising</div>
+      <div class="cert-issuer">ID-Network</div>
+      <div class="cert-date">2025</div>
+    </div>
+  </div>
+
+  <!-- Sertifikat 3 -->
+  <div class="cert-card">
+    <div class="cert-img-wrap">
+      <img src="img/reno3.png" alt="Intro Data 3">
+    </div>
+    <div class="cert-info">
+      <div class="cert-name">Intro to Data Analytics</div>
+      <div class="cert-issuer">RevoU</div>
+      <div class="cert-date">2026</div>
+    </div>
+  </div>
+
+  <!-- Project 1 -->
+  <div class="cert-card">
+    <div class="cert-img-wrap">
+      <img src="img/SebaranMap.png" alt="Sebaran Map">
+    </div>
+    <div class="cert-info">
+      <div class="cert-name" data-en="Employee Origin Distribution Using KNIME" data-id="Sebaran Asal Karyawan Menggunakan KNIME">Sebaran Asal Karyawan Menggunakan KNIME</div>
+      <div class="cert-issuer">Mini Project</div>
+      <div class="cert-date">2026</div>
+    </div>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="cert-card">
+    <div class="cert-img-wrap">
+      <img src="img/project1.png" alt="Dashboard Transaksi">
+    </div>
+    <div class="cert-info">
+      <div class="cert-name" data-en="Virtual Transaction Dashboard" data-id="Dashboard Transaksi Virtual">Dashboard Transaksi Virtual</div>
+      <div class="cert-issuer">Mini Project</div>
+      <div class="cert-date">2026</div>
+    </div>
+  </div>
+
+  <!-- Project 3 -->
+  <div class="cert-card">
+    <div class="cert-img-wrap">
+      <img src="img/more.png" alt="More">
+    </div>
+    <div class="cert-info">
+      <div class="cert-name" data-en="BNSP Certificate (ongoing)" data-id="Sertifikat BNSP on going">Sertifikat BNSP on going</div>
+      <div class="cert-issuer">See You ON TOP</div>
+      <div class="cert-date">2026</div>
+    </div>
+  </div>
+
+</div>
+</section>
+  <div class="divider"></div>
+
+
+  <!-- ════════════════════════════════════════
+       CONTACT
+  ════════════════════════════════════════ -->
+  <section id="contact">
+  <div class="contact-container fade-up">
+    <div class="contact-left">
+      <h2 data-en="Reach Out." data-id="Mari Terhubung.">Reach Out.</h2>
+      <p data-en="Have a project idea, question, or want to collaborate? Feel free to send a message. I'm open to new collaborations." data-id="Punya ide project, pertanyaan, atau ingin bekerja sama? Silakan kirim pesan. Saya terbuka untuk kolaborasi baru.">
+        Punya ide project, pertanyaan, atau ingin bekerja sama?
+        Silakan kirim pesan. Saya terbuka untuk kolaborasi baru.
+      </p>
+
+      <div class="contact-info">
+        <span>✉️</span>
+        <div>
+          <small>EMAIL</small>
+          <strong>renoo151122@gmail.com</strong>
+        </div>
+      </div>
+
+      <div class="contact-info">
+        <span>📍</span>
+        <div>
+          <small data-en="LOCATION" data-id="LOKASI">LOKASI</small>
+          <strong>Tangerang, Indonesia</strong>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+  <label data-en="Full Name" data-id="Nama Lengkap">Full Name</label>
+  <input type="text" placeholder="Enter your name" required data-en-placeholder="Enter your name" data-id-placeholder="Masukkan nama Anda">
+
+  <label data-en="Email Address" data-id="Alamat Email">Email Address</label>
+  <input type="email" placeholder="name@email.com" required>
+
+  <label data-en="Message" data-id="Pesan">Message</label>
+  <textarea placeholder="Tell me about your project or idea..." required data-en-placeholder="Tell me about your project or idea..." data-id-placeholder="Ceritakan tentang proyek atau ide Anda..."></textarea>
+
+ <button type="button" id="sendBtn" data-en="✈ Send Message" data-id="✈ Kirim Pesan">
+  ✈ Send Message
+</button>
+</form>
+
+    
+  </div>
+</section>
+
+
+  <!-- ════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+  <footer>
+    <span class="footer-name">Reno</span>
+    &nbsp;·&nbsp;
+    <span data-en="Information System" data-id="Sistem Informasi">Information System</span>
+    &nbsp;·&nbsp;
+    2026
+  </footer>
+
+  <!-- Script (deferred) -->
+  <script src="script.js"></script>
+
+  <div id="toast" class="toast" data-en="✅ Message sent successfully. Thank you for reaching out!" data-id="✅ Pesan berhasil dikirim. Terima kasih sudah menghubungi saya!">
+  ✅ Pesan berhasil dikirim. Terima kasih sudah menghubungi saya!
+  </div>
+
+  <!-- Language Toggle Styles & Script -->
+  <style>
+    .lang-toggle {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--surface, #f1f5f9);
+      border: 1.5px solid var(--border, #e2e8f0);
+      border-radius: 999px;
+      padding: 5px 14px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      letter-spacing: 0.05em;
+      color: var(--text-muted, #94a3b8);
+      transition: border-color 0.2s, box-shadow 0.2s;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .lang-toggle:hover {
+      border-color: var(--accent, #6366f1);
+      box-shadow: 0 0 0 3px rgba(99,102,241,0.1);
+    }
+    .lang-option {
+      padding: 2px 5px;
+      border-radius: 999px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .lang-option.active {
+      background: var(--accent, #6366f1);
+      color: #fff;
+    }
+    .lang-sep {
+      opacity: 0.3;
+      font-weight: 400;
+    }
+  </style>
+
+  <script>
+    (function () {
+      const LANG_KEY = 'reno-portfolio-lang';
+      let currentLang = localStorage.getItem(LANG_KEY) || 'id';
+
+      const btnEN        = document.getElementById('langEN');
+      const btnID        = document.getElementById('langID');
+      const btnENMobile  = document.getElementById('langENMobile');
+      const btnIDMobile  = document.getElementById('langIDMobile');
+      const toggle       = document.getElementById('langToggle');
+      const toggleMobile = document.getElementById('langToggleMobile');
+
+      function applyLang(lang) {
+        currentLang = lang;
+        localStorage.setItem(LANG_KEY, lang);
+
+        // Update indikator aktif — desktop & mobile
+        if (btnEN)       btnEN.classList.toggle('active', lang === 'en');
+        if (btnID)       btnID.classList.toggle('active', lang === 'id');
+        if (btnENMobile) btnENMobile.classList.toggle('active', lang === 'en');
+        if (btnIDMobile) btnIDMobile.classList.toggle('active', lang === 'id');
+
+        // Update semua elemen data-en / data-id
+        document.querySelectorAll('[data-en],[data-id]').forEach(el => {
+          const val = lang === 'en' ? el.getAttribute('data-en') : el.getAttribute('data-id');
+          if (val !== null) el.innerHTML = val;
+        });
+
+        // Update placeholders
+        document.querySelectorAll('[data-en-placeholder],[data-id-placeholder]').forEach(el => {
+          const ph = lang === 'en'
+            ? el.getAttribute('data-en-placeholder')
+            : el.getAttribute('data-id-placeholder');
+          if (ph !== null) el.setAttribute('placeholder', ph);
+        });
+
+        document.documentElement.lang = lang === 'en' ? 'en' : 'id';
+      }
+
+      if (toggle)       toggle.addEventListener('click',       () => applyLang(currentLang === 'en' ? 'id' : 'en'));
+      if (toggleMobile) toggleMobile.addEventListener('click', () => applyLang(currentLang === 'en' ? 'id' : 'en'));
+
+      applyLang(currentLang);
+    })();
+  </script>
+
+</body>
+</html>
