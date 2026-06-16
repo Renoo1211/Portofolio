@@ -329,6 +329,95 @@ function initContactToast() {
   });
 }
 
+/* HERO COUNTER - */
+
+function startHeroCounter() {
+  const counters = document.querySelectorAll(".counter");
+
+  counters.forEach(counter => {
+    if (counter.dataset.done === "true") return;
+
+    const target = Number(counter.dataset.target);
+    let current = 0;
+    const duration = 1500;
+    const startTime = performance.now();
+
+    function update(now) {
+      const progress = Math.min((now - startTime) / duration, 1);
+      const value = Math.floor(progress * target);
+
+      counter.textContent = value.toLocaleString();
+
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      } else {
+        counter.textContent = target.toLocaleString();
+        counter.dataset.done = "true";
+      }
+    }
+
+    requestAnimationFrame(update);
+  });
+}
+
+function initThemeToggle() {
+  const themeButtons = [
+    document.getElementById("themeToggle"),
+    document.getElementById("themeToggleMobile")
+  ].filter(Boolean);
+
+  if (themeButtons.length === 0) return;
+
+  const THEME_KEY = "reno-portfolio-theme";
+
+  // Restore saved theme
+  const savedTheme = localStorage.getItem(THEME_KEY);
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+  } else {
+    document.body.classList.remove("dark-mode");
+  }
+
+  function updateIcons() {
+    const isDark = document.body.classList.contains("dark-mode");
+
+    themeButtons.forEach(btn => {
+      const icon = btn.querySelector("i");
+      if (!icon) return;
+
+      // Add spin animation on change
+      icon.style.transform = "rotate(360deg)";
+      setTimeout(() => {
+        icon.className = isDark
+          ? "fa-solid fa-sun"
+          : "fa-solid fa-moon";
+        icon.style.transform = "";
+      }, 250);
+    });
+  }
+
+  function toggleTheme() {
+    document.body.classList.toggle("dark-mode");
+
+    const isDark = document.body.classList.contains("dark-mode");
+    localStorage.setItem(THEME_KEY, isDark ? "dark" : "light");
+
+    updateIcons();
+  }
+
+  themeButtons.forEach(btn => {
+    btn.addEventListener("click", toggleTheme);
+  });
+
+  // Set initial icons without animation
+  const isDark = document.body.classList.contains("dark-mode");
+  themeButtons.forEach(btn => {
+    const icon = btn.querySelector("i");
+    if (!icon) return;
+    icon.className = isDark ? "fa-solid fa-sun" : "fa-solid fa-moon";
+  });
+}
+
 /* ──────────────────────────────────────────────────────────
    INIT
 ────────────────────────────────────────────────────────── */
@@ -338,5 +427,10 @@ document.addEventListener('DOMContentLoaded', () => {
   initMarquee();
   initDraggableCard();
   initContactToast();
+  initThemeToggle();
   runIntro();
+
+  setTimeout(() => {
+    startHeroCounter();
+  }, 5000);
 });

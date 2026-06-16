@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="icon" type="image/png" href="img/icon.png">
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
@@ -40,17 +41,60 @@
        NAVIGATION
   ════════════════════════════════════════ -->
   <nav>
-    <a class="nav-logo" href="#hero">reno | <span data-en="portfolio" data-id="portofolio">portofolio</span></a>
+    <a class="nav-logo" href="#hero" style="font-size: 30px" >RN</a>
 
-    <ul class="nav-links">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#tools">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certificates">Certificates</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <ul class="nav-links">
+
+  <li>
+    <a href="#hero">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="#about">
+      <i class="fa-regular fa-user"></i>
+      <span>About</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="#tools">
+      <i class="fa-solid fa-code"></i>
+      <span>Skills</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="#experience">
+      <i class="fa-solid fa-briefcase"></i>
+      <span>Experience</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="#projects">
+      <i class="fa-regular fa-folder"></i>
+      <span>Projects</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="#certificates">
+      <i class="fa-solid fa-award"></i>
+      <span>Certificates</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="#contact">
+      <i class="fa-regular fa-envelope"></i>
+      <span>Contact</span>
+    </a>
+  </li>
+
+</ul>
 
     <a class="nav-cta" href="#contact" data-en="Let's talk →" data-id="Hubungi →">Let's talk →</a>
 
@@ -59,6 +103,11 @@
       <span class="lang-option" id="langEN">EN</span>
       <span class="lang-sep">|</span>
       <span class="lang-option" id="langID">ID</span>
+    </button>
+
+    <!-- Theme Toggle (desktop) -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+      <i class="fa-solid fa-moon"></i>
     </button>
   </nav>
 
@@ -71,6 +120,12 @@
     </button>
   </div>
 
+  <!-- Theme Toggle Mobile (floating kiri atas, tampil di ≤768px) -->
+  <div class="theme-toggle-mobile-wrap">
+    <button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle dark/light mode">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+  </div>
 
   <!-- ════════════════════════════════════════
        HERO
@@ -99,22 +154,38 @@
         </p>
         <div class="hero-socials fade-up delay-3">
 
-      <a href="https://www.linkedin.com/in/renosi/"target="_blank"rel="noopener noreferrer"title="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
+  <a href="https://www.linkedin.com/in/renosi/"
+     target="_blank"
+     rel="noopener noreferrer"
+     data-tooltip="LinkedIn">
 
-      <a href="https://www.instagram.com/screzonss"target="_blank"rel="noopener noreferrer"title="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
+    <i class="fab fa-linkedin"></i>
+  </a>
 
-      <a href="https://github.com/Renoo1211"target="_blank"rel="noopener noreferrer"title="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
+  <a href="https://www.instagram.com/screzonss"
+     target="_blank"
+     rel="noopener noreferrer"
+     data-tooltip="Instagram">
 
-      <a href="Assets/Reno CV.pdf"download title="Download CV">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-    </div>
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://github.com/Renoo1211"
+     target="_blank"
+     rel="noopener noreferrer"
+     data-tooltip="GitHub">
+
+    <i class="fab fa-github"></i>
+  </a>
+
+  <a href="Assets/Reno CV.pdf"
+     download
+     data-tooltip="Download CV">
+
+    <i class="fas fa-file-pdf"></i>
+  </a>
+
+</div>
 
         <div class="hero-actions fade-up delay-3">
           <a href="#projects" class="btn-primary" data-en="View Projects" data-id="Lihat Proyek">View Projects</a>
@@ -122,20 +193,34 @@
         </div>
 
         <div class="hero-stats fade-up delay-4">
-          <div class="hero-stat">
-            <div class="hero-stat-num">7<span>+</span></div>
-            <div class="hero-stat-label" data-en="TOOLS LEARNED" data-id="TOOLS DIPELAJARI">TOOLS DIPELAJARI</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-num">600<span>+</span></div>
-            <div class="hero-stat-label" data-en="STORES SUPPORTED" data-id="TOKO TERPANTAU">TOKO TERPANTAU</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-num">∞</div>
-            <div class="hero-stat-label" data-en="EAGER TO LEARN" data-id="SEMANGAT BELAJAR">SEMANGAT BELAJAR</div>
-          </div>
+
+      <div class="hero-stat">
+        <div class="hero-stat-num">
+          <span class="counter" data-target="7">0</span>+
         </div>
+      <div class="hero-stat-label"
+         data-en="TOOLS LEARNED"
+         data-id="TOOLS DIPELAJARI">TOOLS DIPELAJARI</div>
       </div>
+
+      <div class="hero-stat">
+        <div class="hero-stat-num"><span class="counter" data-target="637">0</span>+
+      </div>
+      <div class="hero-stat-label"
+         data-en="STORES SUPPORTED"
+         data-id="TOKO TERPANTAU">TOKO TERPANTAU</div>
+      </div>
+
+      <div class="hero-stat">
+        <div class="hero-stat-num"><span class="counter" data-target="100">0</span>K+
+      </div>
+      <div class="hero-stat-label"
+         data-en="DAILY VIRTUAL TRANSACTIONS"
+         data-id="TRANSAKSI VIRTUAL PERHARI">TRANSAKSI VIRTUAL PERHARI
+      </div>
+    </div>
+  </div>
+  </div>
 
       <!-- ID Card Profile -->
       <div class="hero-right fade-up delay-2">
@@ -190,7 +275,7 @@
       <!-- Foto Kiri -->
       <div class="about-photo-col fade-up">
         <div class="about-photo-frame">
-          <img src="img/profilaboutme.png" alt="Reno" class="about-photo-img" />
+          <img src="img/profilaboutme1.png" alt="Reno" class="about-photo-img" />
         </div>
       </div>
 
