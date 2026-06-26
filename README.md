@@ -103,11 +103,11 @@ or use **Live Server**.
 
 ---
 
-## 📸 Preview
+<h2>📸 Preview</h2>
 
-```
-<img src="img/review.png" alt="Portfolio Preview" width="100%">
-```
+<p align="center">
+  <img src="img/review.png" alt="Portfolio Preview" width="100%">
+</p>
 
 ## 🎯 Future Improvements
 
