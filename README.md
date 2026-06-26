@@ -19,7 +19,7 @@ https://renoo1211.github.io/Portofolio/
 
 ## 📖 About
 
-This project is my personal portfolio website, created to showcase my skills, projects, certifications, and experiences as an Information Systems student and aspiring Web Developer.
+This project is my personal portfolio website, created to showcase my skills, projects, certifications, and experiences as an Information Systems student and aspiring Data Analyst.
 
 The website focuses on a clean design, smooth user experience, responsive layouts, and interactive animations while maintaining fast performance.
 
@@ -106,7 +106,7 @@ or use **Live Server**.
 ## 📸 Preview
 
 ```
-img/preview.png
+img/review.png
 ```
 
 ## 🎯 Future Improvements
