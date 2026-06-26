@@ -106,7 +106,7 @@ or use **Live Server**.
 ## 📸 Preview
 
 ```
-img/review.png
+<img src="img/review.png" alt="Portfolio Preview" width="100%">
 ```
 
 ## 🎯 Future Improvements
