@@ -64,9 +64,10 @@ Portofolio/
 ├── style.css
 ├── script.js
 ├── assets/
-│   ├── images/
-│   ├── certificates/
-│   └── icons/
+├──img/
+│   ├── certificates
+│   └── icons
+│   └── profil
 └── README.md
 ```
 
@@ -104,9 +105,9 @@ or use **Live Server**.
 
 ## 📸 Preview
 
-
-img/review.png
-
+```
+img/preview.png
+```
 
 ## 🎯 Future Improvements
 
