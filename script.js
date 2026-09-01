@@ -314,18 +314,35 @@ function initContactToast() {
 
   if (!form || !sendBtn || !toast) return;
 
-  sendBtn.addEventListener("click", () => {
+  sendBtn.addEventListener("click", async () => {
     if (!form.checkValidity()) {
       form.reportValidity();
       return;
     }
 
-    toast.classList.add("show");
-    form.reset();
+    sendBtn.disabled = true;
 
-    setTimeout(() => {
-      toast.classList.remove("show");
-    }, 3000);
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" }
+      });
+
+      if (response.ok) {
+        toast.classList.add("show");
+        form.reset();
+      } else {
+        alert("Gagal mengirim pesan. Coba lagi nanti.");
+      }
+    } catch (error) {
+      alert("Terjadi kesalahan koneksi. Coba lagi nanti.");
+    } finally {
+      sendBtn.disabled = false;
+      setTimeout(() => {
+        toast.classList.remove("show");
+      }, 3000);
+    }
   });
 }
 

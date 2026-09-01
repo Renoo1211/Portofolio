@@ -819,19 +819,19 @@
       </div>
     </div>
 
-    <form class="contact-form" id="contactForm">
+  <form class="contact-form" id="contactForm" action="https://formspree.io/f/mbgjggbp">
   <label data-en="Full Name" data-id="Nama Lengkap">Full Name</label>
-  <input type="text" placeholder="Enter your name" required data-en-placeholder="Enter your name" data-id-placeholder="Masukkan nama Anda">
+  <input type="text" name="name" placeholder="Enter your name" required data-en-placeholder="Enter your name" data-id-placeholder="Masukkan nama Anda">
 
   <label data-en="Email Address" data-id="Alamat Email">Email Address</label>
-  <input type="email" placeholder="name@email.com" required>
+  <input type="email" name="email" placeholder="name@email.com" required>
 
   <label data-en="Message" data-id="Pesan">Message</label>
-  <textarea placeholder="Tell me about your project or idea..." required data-en-placeholder="Tell me about your project or idea..." data-id-placeholder="Ceritakan tentang proyek atau ide Anda..."></textarea>
+  <textarea name="message" placeholder="Tell me about your project or idea..." required data-en-placeholder="Tell me about your project or idea..." data-id-placeholder="Ceritakan tentang proyek atau ide Anda..."></textarea>
 
- <button type="button" id="sendBtn" data-en="✈ Send Message" data-id="✈ Kirim Pesan">
-  ✈ Send Message
-</button>
+  <button type="button" id="sendBtn" data-en="✈ Send Message" data-id="✈ Kirim Pesan">
+    ✈ Send Message
+  </button>
 </form>
 
     
